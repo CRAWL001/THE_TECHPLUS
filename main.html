@@ -3,68 +3,350 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="shortcut icon" href="https://telegra.ph/file/4cf337052c09eec06f3e8.jpg" type="image/x-icon">
-  <title>TheTechPlus</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="index.js"></script>
+
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero-text {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+nav .logo{
+  position: fixed !important;
+}
+.hero-banner .getstarted {
+  background-color: #0e0be3;
+  width: 150px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border: none; /* Remove border */
+  border-radius: 15px; /* Add rounded corners */
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Convert text to uppercase */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.hero-banner .getstarted:hover {
+  background-color: #a106cb; /* Change background color on hover */
+}
+.hero-text h2{
+  text-align: center;
+}
+body{
+  font-family: montserrat;
+
+}
+
+.hero-banner {
+  background-image: url('istockphoto-613241758-612x612.jpg');
+  background-size: cover; /* Adjusts the size of the background image */
+  background-position: center; /* Positions the background image */
+  height: 400px; /* Adjust the height of your hero banner */
+}
+
+.btn-primary:hover {
+  background-color: #3600b3;
+  border-color: #000000;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+/* Initial Styles */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline ;
+  line-height: 80px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+/* Navigation styling */
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+.card-container {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  flex-wrap: wrap; /* Allow items to wrap */
+
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Adjust margin between cards */
+  text-align: center;
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-img-top {
+  height: auto; /* Responsive image */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.si
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero banner styling */
+.hero-banner {
+  background-color: #000000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Card styling */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Get Container styling */
+.getConatiner {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.getConatiner img {
+  width: 300px;
+  height: auto;
+}
+
+/* Contact Us styling */
+.contactUs {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contactUs h2 {
+  margin-bottom: 20px;
+}
+
+.contactUs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactUs ul li {
+  margin-bottom: 10px;
+}
+
+/* Social Icons styling */
+.socialIcons {
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  margin-right: 10px;
+}
+
+.socialIcons img {
+  width: 40px;
+  height: 40px;
+}
+
+  </style>
+  
+
+<title>THE TECHPLUS</title>
 </head>
 <body>
 	<nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
+      <input type="checkbox">
         <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">TheTechPlus</label>
+        <label class="logo">THE_THECHPLUS</label>>
       <ul>
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Service.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://wa.me/94714184446?text=Feedback">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+   
+
+     <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://wa.me/94714184446?text=Feedback">Feedback</a></li>
       </ul>
     </nav>
     <div class="hero-banner">
-      <div class="hero-text">
-      <h2>TheTechPlus</h2>
+  
+
+    <div class="hero-text">
+      <h2 style="text-align:center;">TheTechPlus</h2>
+ 
+
+     <br>
       <br>
-      <br>
-        <p>NOW ONLY WORKING CATALOGS.PLEASE YOU HAVE ERROR CONTACT WE IN CONTACT FILE</p>
+        <p>Welcome to TheTechPlus we are post new tech news,coding lessone,coding project file and more !! stay tuned with our Services</p>
         <br>
         <br>
-        <button class="getstarted">
-          Get started
-        </button>
+        <button class="getstarted" a href="#">Get started</button>
       </div>
     </div>
+
     <br>
     <br>
     <div class="card-container">
       
-<div class="card" style="width: 18rem;">
-  <img src="icon-code-logo-J33X3y8-600.jpg" class="card-img-top" alt="..." style="height:200px;">
+<div class="card">
+  <img src="icon-code-logo-J33X3y8-600.jpg" class="card-img-top" alt="..." style="width:250px; height:250px;" >
   <div class="card-body">
     <h5 class="card-title">Coding</h5>
     <p class="card-text">HTML for structure, CSS for style, JavaScript for interactivity. Combine them to create websites and apps. Tutorials and docs help guide the process.</p>
-    <a href="#" class="btn btn-primary">Get started</a>
+   
+
+ <a href="#" class="btn btn-primary">Get started</a>
   </div>
 </div>
 <br>
 <br>
-<div class="card" style="width: 18rem;">
-  <img src="gear-smart-eps-icon-digital-tech-business-logo-free-vector.jpg" class="card-img-top" alt="..." style="height:200px;">
+<div class="card">
+  <img src="gear-smart-eps-icon-digital-tech-business-logo-free-vector.jpg" class="card-img-top" alt="..." style="width:250px; height:250px;">
   <div class="card-body">
     <h5 class="card-title">Tech news</h5>
-    <p class="card-text">Stay tuned with new tech news in the world and latest information</p>
-    <a href="contact.html" class="btn btn-primary">CONTACT</a>
+    <p class="card-text">Stay informed with the latest global tech news and updates, providing you with the most recent information and insights from around the world.</p>
+    <a href="#" class="btn btn-primary">Get started</a>
+ 
+
+ </div>
+</div>
+<div class="card">
+  <img src="167223188-coding-file-vector-line-colour-icon.jpg" class="card-img-top" alt="..." style="width:250px; height:250px;">
+  <div class="card-body">
+    <h5 class="card-title">Code file</h5>
+    <p class="card-text">Html,Css,Js code file to create website and website login forum,Navbar etc.You can get code file with Create an account</p>
+ 
+
+   <a href="#" class="btn btn-primary">Get started</a>
   </div>
 </div>
+    
+
+</div>
+    <div class="getConatiner">
+      <img src="man-with-laptop_126546-10.jpg" >
+      <h2>
+        Wellcome to TheTechPlus
+      </h2>
+      <br>
+      <p>TheTechPlus is website for post tech news,coding toutorial,code project.Track your progesce of coding toutorial with sign up.click the signup button for more experince.
+      </p>
+      <br>
+      <a href="index2.html" class="btn btn-primary">SIGN UP</a>
+      </a>
     </div>
-	<br><br>
-	<center>
-	<video width="600" controls autoplay loop>
-            <source src="we.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-	</center>
+    <br>
+    <br>
+<div class="contactUs">
+  <h2>Contact Us</h2>
+  <center>
+  <p>We'd love to hear from you!</p>
+  <br>
+    <li>Email: niroshanmalindu77@gmail.com</li>
+      <br>
+    <li>Phone:+94714184446 
+       +94716682532</li>
+       <br>
+    <li>Address:131/3 veyangoda</li>
+  </center>
+  <div class="socialIcons"><a href="https://crawl.github.io/THE_THECHPLUS/main.html"><img src="contact.png"></a> 
+    <a href="https://crawl001.github.io/THE_TECHPLUS/contact.html"><img src="whatsapp.png"></a>
+    <a href="https://www.youtube.com/@CRAWL_SL_YT"><img src="youtube.png"></a>
+  </div>
+</div>
+
 </body>
 </html>
